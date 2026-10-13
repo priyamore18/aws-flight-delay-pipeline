@@ -45,3 +45,20 @@ SELECT airline, AVG(departure_delay) AS avg_delay
 FROM flights_parquet
 GROUP BY airline
 ORDER BY avg_delay DESC;
+
+
+-- Lab 5: Partitioned table query
+SELECT AVG(departure_delay) AS avg_delay
+FROM flights_by_month
+WHERE month = 1;
+
+-- Lab 5: Non-partitioned comparison query
+SELECT AVG(departure_delay) AS avg_delay
+FROM flights_parquet
+WHERE month = 1;
+
+-- Lab 5: Check month distribution
+SELECT month, COUNT(*) AS total_rows
+FROM raw_flights
+GROUP BY month
+ORDER BY month;
