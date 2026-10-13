@@ -219,3 +219,12 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 data/
+# AWS credentials and local configuration
+.aws/
+.env.*
+!.env.example
+
+# Local keys and certificates
+*.pem
+*.key
+
