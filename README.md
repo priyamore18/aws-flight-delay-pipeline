@@ -6,7 +6,7 @@ This project builds a small AWS data engineering pipeline for flight delay data 
 
 ## Architecture
 
-![AWS Flight Delay Pipeline Architecture](docs/architecture.png)
+![AWS Flight Delay Pipeline Architecture](docs/AWS%20Glue%20Data%20Pipeline%20Architecture.png)
 
 ## S3 Layout
 
