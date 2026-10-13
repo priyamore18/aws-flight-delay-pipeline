@@ -38,4 +38,4 @@ Created `flights_by_month` in Parquet format, partitioned by the `month` column.
 ### Lake Formation
 - **IAM:** Controls access to AWS services and resources.
 - **AWS Lake Formation:** Adds fine-grained data lake permissions for databases, tables, columns, and, where configured, rows.
-- **Observation:** The `raw_flights` table showed Governance: Disabled in AWS Lake Formation. This means Lake Formation governance was not enabled for this table in the current configuration. We inspected the settings without changing them. Access may still be controlled through IAM and Amazon S3 permissions.
+- **Observation:**  Inspected the Lake Formation data permissions list. Permissions vary by resource and can include actions such as Select or broader access. No settings were changed.
